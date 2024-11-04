@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>  // Include cmath for mathematical functions
+#include <cmath> 
 using namespace std;
 
 void parseAddition() {
@@ -8,7 +8,7 @@ void parseAddition() {
     cin >> a;
     cout << "Enter the second value: ";
     cin >> b;
-    cout << "Result: " << (a + b) << endl; // Added "Result: " for clarity
+    cout << "Result: " << (a + b) << endl;
 }
 
 void parseSubtraction() {
@@ -17,7 +17,7 @@ void parseSubtraction() {
     cin >> a;
     cout << "Enter the second value: ";
     cin >> b;
-    cout << "Result: " << (a - b) << endl; // Added "Result: " for clarity
+    cout << "Result: " << (a - b) << endl; 
 }
 
 void parseMultiplication() {
@@ -26,7 +26,7 @@ void parseMultiplication() {
     cin >> a;
     cout << "Enter the second value: ";
     cin >> b;
-    cout << "Result: " << (a * b) << endl; // Added "Result: " for clarity
+    cout << "Result: " << (a * b) << endl; 
 }
 
 void parseDivision() {
@@ -36,9 +36,9 @@ void parseDivision() {
     cout << "Enter the second value: ";
     cin >> b;
     if (b != 0) {
-        cout << "Result: " << (a / b) << endl; // Added "Result: " for clarity
+        cout << "Result: " << (a / b) << endl; 
     } else {
-        cout << "Error: Division by zero!" << endl; // Handle division by zero
+        cout << "Error: Division by zero!" << endl;
     }
 }
 
@@ -49,15 +49,15 @@ void parseExponentiation() {
     cin >> a;
     cout << "Enter the exponent value: ";
     cin >> b;
-    cout << "Result: " << pow(a, b) << endl; // Added "Result: " for clarity
+    cout << "Result: " << pow(a, b) << endl; 
 }
 
 void parseSquareRoot() {
     float a = 0;
     cout << "Enter the value: ";
     cin >> a;
-    if (a >= 0) { // Check for non-negative input
-        cout << "Result: " << sqrt(a) << endl; // Added "Result: " for clarity
+    if (a >= 0) { 
+        cout << "Result: " << sqrt(a) << endl; 
     } else {
         cout << "Error: Cannot compute square root of a negative number!" << endl;
     }
@@ -65,23 +65,23 @@ void parseSquareRoot() {
 
 void parseSine() {
     float a = 0;
-    cout << "Enter the value in radians: "; // Clarified input requirement
+    cout << "Enter the value in radians: "; 
     cin >> a;
-    cout << "Result: " << sin(a) << endl; // Added "Result: " for clarity
+    cout << "Result: " << sin(a) << endl; 
 }
 
 void parseCosine() {
     float a = 0;
-    cout << "Enter the value in radians: "; // Clarified input requirement
+    cout << "Enter the value in radians: "; 
     cin >> a;
-    cout << "Result: " << cos(a) << endl; // Added "Result: " for clarity
+    cout << "Result: " << cos(a) << endl; 
 }
 
 void parseTangent() {
     float a = 0;
-    cout << "Enter the value in radians: "; // Clarified input requirement
+    cout << "Enter the value in radians: "; 
     cin >> a;
-    cout << "Result: " << tan(a) << endl; // Added "Result: " for clarity
+    cout << "Result: " << tan(a) << endl; 
 }
 
 void help() {
@@ -102,11 +102,11 @@ void help() {
 }
 
 void error() {
-    cout << "Error: Input is invalid!\n"; // Updated error message
+    cout << "Error: Input is invalid!\n"; 
 }
 
 int main() {
-    char type; // Changed to char for consistency
+    char type; 
     bool flag = true;
     while (flag) {
         cout << "------------------\n(h) For help\n(e) To exit\nEnter your choice: ";
@@ -143,10 +143,10 @@ int main() {
                 help();
                 break;
             case 'e':
-                flag = false; // Exit the loop
+                flag = false; 
                 break;
             default:
-                error(); // Handle invalid input
+                error(); 
                 break;
         }
     }
